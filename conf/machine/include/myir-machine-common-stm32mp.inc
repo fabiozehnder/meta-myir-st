@@ -94,7 +94,7 @@ STM32MP_USERFS_LABEL ?= "userfs"
 STM32MP_USERFS_MOUNTPOINT ?= "/usr/local"
 STM32MP_VENDORFS_IMAGE ?= "st-image-vendorfs"
 STM32MP_VENDORFS_LABEL ?= "vendorfs"
-STM32MP_VENDORFS_MOUNTPOINT ?= "/vendor"
+STM32MP_VENDORFS_MOUNTPOINT ?= "/zehnder"
 
 # Define image partition size (supposed to be set as max size in image recipe)
 # Proposed value for bootfs is 64MB
@@ -115,14 +115,14 @@ BOOTFS_PARTITION_SIZE ?= "65536"
 #   rootfs < 746.8MiB
 # Proposed value for rootfs is 746MiB
 # Define max size for ROOTFS image being built to this value
-#IMAGE_ROOTFS_MAXSIZE ?= "763904"
-IMAGE_ROOTFS_MAXSIZE ?= "200800"
+IMAGE_ROOTFS_MAXSIZE ?= "763904"
+#IMAGE_ROOTFS_MAXSIZE ?= "200800"
 # And configure the ROOTFS_PARTITION_SIZE variable accordingly
 ROOTFS_PARTITION_SIZE ?= "${IMAGE_ROOTFS_MAXSIZE}"
 # Proposed value for userfs is 128MB (4*32MB)
 USERFS_PARTITION_SIZE ?= "131072"
-# Proposed value for vendorfs is 16MB
-VENDORFS_PARTITION_SIZE ?= "16384"
+# Proposed value for vendorfs is 200MB
+VENDORFS_PARTITION_SIZE ?= "204800"
 
 # Enable use of extra partition(s)
 ST_BOOTFS   ?= "1"
