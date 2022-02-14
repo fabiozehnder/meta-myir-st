@@ -260,14 +260,14 @@ FLASHLAYOUT_PARTITION_BIN2LOAD_ubifs        = "${IMAGE_LINK_NAME}_nand_2_256_mul
 #   '-<PATTERN>-'
 # -----------------------------------------------------------------------------
 # We use specific tf-a serialboot mode for any bootscheme for fsbl1-boot
-FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_fsbl1-boot:append = " optee;serialboot trusted;serialboot"
+FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_fsbl1-boot_append = " optee;serialboot trusted;serialboot"
 
 # For u-boot the 'optee' bootscheme is the same than trusted so use 'trusted'
-FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_ssbl-boot:append = " optee;trusted"
-FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_ssbl:append = " optee;trusted"
-FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_ssbl2:append = " optee;trusted"
+FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_ssbl-boot_append = " optee;trusted"
+FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_ssbl_append = " optee;trusted"
+FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_ssbl2_append = " optee;trusted"
 
 # The daughter board does not support Programmer mode, so use eval one
 # (valid for both fsbl1-boot and ssbl-boot)
-FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_fsbl1-boot:append = " ed1;ev1"
-FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_ssbl-boot:append = " ed1;ev1"
+FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_fsbl1-boot_append = " ed1;ev1"
+FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_ssbl-boot_append = " ed1;ev1"
