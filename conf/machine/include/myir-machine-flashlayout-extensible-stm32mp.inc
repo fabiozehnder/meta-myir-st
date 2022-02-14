@@ -32,7 +32,7 @@ FLASHLAYOUT_PARTITION_LABELS_extensible:remove = "userfs"
 # install more applications via 'apt-get'
 # Make sure to use 'trusted' bootscheme for binary naming instead of 'extensible'
 # each time it is required
-FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_extensible:prepend = "extensible;trusted "
+FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_extensible_prepend = "extensible;trusted "
 # Additionnal replacement is expected for specific fsbl1 bootloader binary, as
 # we should use the 'serialboot' one instead of the 'trusted' one
 FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_extensible_fsbl1-boot:append = " trusted;serialboot"
