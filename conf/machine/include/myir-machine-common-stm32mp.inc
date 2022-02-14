@@ -144,7 +144,7 @@ PARTITIONS_CONFIG[userfs]   ?= "${STM32MP_USERFS_IMAGE},${STM32MP_USERFS_LABEL},
 IMAGE_CLASSES += "image_types-stubi"
 
 # Define two empty volumes to manage U-Boot config beginning of multivolume UBIFS
-STM32MP_UBI_VOLUME:prepend = "uboot_config:256:empty uboot_config_r:256:empty "
+STM32MP_UBI_VOLUME_prepend = "uboot_config:256:empty uboot_config_r:256:empty "
 
 # Define UBI volume label to use in kernel command line to mount UBI file system
 UBI_VOLNAME ?= "rootfs"
