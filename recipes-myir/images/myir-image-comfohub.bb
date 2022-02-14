@@ -109,7 +109,7 @@ IMAGE_INSTALL += " \
 #"
 
 
-IMAGE_INSTALL_remove += " \
+IMAGE_INSTALL:remove += " \
     alsa-lib \
     alsa-plugins \
     alsa-state \

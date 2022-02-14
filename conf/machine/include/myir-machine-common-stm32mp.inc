@@ -187,7 +187,7 @@ IMAGE_FSTYPES += "${@bb.utils.contains('BOOTDEVICE_LABELS', 'nand-2-256', 'stmul
 EXTRA_IMAGECMD_ext4 = "-i 4096 -L ${@d.getVar('IMAGE_NAME_SUFFIX').replace('.', '', 1)[:16]} -O ^metadata_csum,^dir_index"
 
 # Allow debug on the platform with gdb and openocd tools
-EXTRA_IMAGEDEPENDS_append = " \
+EXTRA_IMAGEDEPENDS:append = " \
     gdb-cross-arm \
     openocd-stm32mp-native \
     stm32wrapper4dbg-native \

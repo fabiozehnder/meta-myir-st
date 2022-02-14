@@ -19,7 +19,7 @@ ENABLE_FLASHLAYOUT_CONFIG = "0"
 #
 # IMAGE_FEATURES addons
 #
-IMAGE_FEATURES_append = " \
+IMAGE_FEATURES:append = " \
     x11-base        \
     x11-sato        \
     tools-debug     \
@@ -30,7 +30,7 @@ IMAGE_FEATURES_append = " \
     nfs-server      \
     staticdev-pkgs  \
     "
-IMAGE_INSTALL_append = " \
+IMAGE_INSTALL:append = " \
                         ffmpeg \
                         qt-demo \
                         myd-ya157c \
@@ -40,7 +40,7 @@ IMAGE_INSTALL_append = " \
 #
 # INSTALL addons (manage to add all available openstlinux packages)
 #
-CORE_IMAGE_EXTRA_INSTALL_append = " \
+CORE_IMAGE_EXTRA_INSTALL:append = " \
     packagegroup-framework-tools-extra              \
     \
     packagegroup-framework-sample-x11               \
