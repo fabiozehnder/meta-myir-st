@@ -35,4 +35,4 @@ FLASHLAYOUT_PARTITION_LABELS_extensible_remove = "userfs"
 FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_extensible_prepend = "extensible;trusted "
 # Additionnal replacement is expected for specific fsbl1 bootloader binary, as
 # we should use the 'serialboot' one instead of the 'trusted' one
-FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_extensible_fsbl1-boot_append = " trusted;serialboot"
+FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_extensible_fsbl1-boot:append = " trusted;serialboot"
