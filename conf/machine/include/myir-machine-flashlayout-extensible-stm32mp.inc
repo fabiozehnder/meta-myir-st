@@ -23,7 +23,7 @@ FLASHLAYOUT_TYPE_LABELS_extensible = "${STM32MP_DT_FILES_DK} ${STM32MP_DT_FILE_Y
 #     'st-machine-flashlayout-stm32mp.inc'
 # -----------------------------------------------------------------------------
 FLASHLAYOUT_PARTITION_LABELS_extensible = "fsbl1-boot ssbl-boot fsbl1 fsbl2 ssbl ${FLASHLAYOUT_PARTITION_IMAGES}"
-FLASHLAYOUT_PARTITION_LABELS_extensible:remove = "userfs"
+FLASHLAYOUT_PARTITION_LABELS_extensible_remove = "userfs"
 
 # -----------------------------------------------------------------------------
 # The 'extensible' bootscheme is a trick to generate flashlayout files without
