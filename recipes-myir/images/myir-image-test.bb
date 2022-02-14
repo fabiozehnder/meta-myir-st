@@ -21,7 +21,7 @@ IMAGE_FEATURES += "\
     eclipse-debug       \
     "
 
-IMAGE_INSTALL:append = "myt-pcb-test"
+IMAGE_INSTALL_append = "myt-pcb-test"
 #
 # INSTALL addons
 #

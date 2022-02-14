@@ -24,7 +24,7 @@ IMAGE_FEATURES += " \
 # Define ROOTFS_MAXSIZE to 3GB
 IMAGE_ROOTFS_MAXSIZE = "3145728"
 
-IMAGE_INSTALL:append = " \
+IMAGE_INSTALL_append = " \
 			ffmpeg \
 			qt-demo \
 			myd-ya157c \

@@ -11,7 +11,7 @@ IMAGE_FEATURES += "\
     package-management  \
     ssh-server-dropbear \
     "
-IMAGE_INSTALL:append = "\
+IMAGE_INSTALL_append = "\
                         measy-iot \
                         myd-ya157c \
                         "

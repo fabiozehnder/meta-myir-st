@@ -40,7 +40,7 @@ FILES_${PN} = "${nonarch_base_libdir}/firmware/"
 
 RDEPENDS_${PN} += "${PN}-cypress-license"
 
-RRECOMMENDS_${PN}:append:stm32mpcommon += "${@bb.utils.contains('DISTRO_FEATURES', 'systemd', 'bluetooth-suspend', '', d)}"
+RRECOMMENDS_${PN}_append_stm32mpcommon += "${@bb.utils.contains('DISTRO_FEATURES', 'systemd', 'bluetooth-suspend', '', d)}"
 
 # Firmware files are generally not ran on the CPU, so they can be
 # allarch despite being architecture specific

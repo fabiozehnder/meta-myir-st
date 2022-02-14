@@ -57,11 +57,11 @@ WIFI_IMAGE_INSTALL = "${@bb.utils.contains('MACHINE_FEATURES', 'wifi', '${WIFI_L
 # =========================================================================
 # Image appends
 # =========================================================================
-EXTRA_IMAGEDEPENDS:append = " \
+EXTRA_IMAGEDEPENDS_append = " \
     ${OPTEE_BINARY_INSTALL} \
     "
 
-MACHINE_EXTRA_RRECOMMENDS:append = " \
+MACHINE_EXTRA_RRECOMMENDS_append = " \
     ${GPU_IMAGE_INSTALL}        \
     ${ALSA_IMAGE_INSTALL}       \
     ${BLUETOOTH_IMAGE_INSTALL}  \

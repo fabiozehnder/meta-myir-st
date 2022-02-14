@@ -79,10 +79,10 @@ ST_EXAMPLE_IMAGE ??= "0"
 #FIXME need to manage overall device size to abort flashlayout creation in case of oversizing the storage devices
 
 # Remove NAND flashlayout when we are using st-example-image-* as rootfs too big for a NAND device size of 1 GBytes
-#FLASHLAYOUT_CONFIG_LABELS:remove = "${@bb.utils.contains('ST_EXAMPLE_IMAGE', '1', 'emmc', '', d)}"
-FLASHLAYOUT_CONFIG_LABELS:remove = "${@bb.utils.contains('ST_EXAMPLE_IMAGE', '1', 'nand-2-256', '', d)}"
-#FLASHLAYOUT_CONFIG_LABELS:remove = "${@bb.utils.contains('ST_EXAMPLE_IMAGE', '1', 'nor-sdcard', '', d)}"
-#FLASHLAYOUT_CONFIG_LABELS:remove = "${@bb.utils.contains('ST_EXAMPLE_IMAGE', '1', 'sdcard', '', d)}"
+#FLASHLAYOUT_CONFIG_LABELS_remove = "${@bb.utils.contains('ST_EXAMPLE_IMAGE', '1', 'emmc', '', d)}"
+FLASHLAYOUT_CONFIG_LABELS_remove = "${@bb.utils.contains('ST_EXAMPLE_IMAGE', '1', 'nand-2-256', '', d)}"
+#FLASHLAYOUT_CONFIG_LABELS_remove = "${@bb.utils.contains('ST_EXAMPLE_IMAGE', '1', 'nor-sdcard', '', d)}"
+#FLASHLAYOUT_CONFIG_LABELS_remove = "${@bb.utils.contains('ST_EXAMPLE_IMAGE', '1', 'sdcard', '', d)}"
 
 # -----------------------------------------------------------------------------
 # Define label types for each config
