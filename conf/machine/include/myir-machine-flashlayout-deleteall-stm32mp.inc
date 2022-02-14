@@ -51,5 +51,5 @@ FLASHLAYOUT_PARTITION_BIN2LOAD_deleteall_fsbl2 = "none"
 # The 'deleteall' bootscheme is a trick to generate flashlayout files to clean
 # all memory devices on board. There are no specific 'deleteall' bootloader
 # binaries so use the proper one ('serialboot', 'optee' or 'trusted').
-FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_fsbl1-boot_append = " deleteall;serialboot"
-FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_ssbl-boot_append = " deleteall;trusted"
+FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_fsbl1-boot:append = " deleteall;serialboot"
+FLASHLAYOUT_PARTITION_REPLACE_PATTERNS_ssbl-boot:append = " deleteall;trusted"
